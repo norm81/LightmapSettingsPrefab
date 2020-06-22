@@ -1,7 +1,7 @@
 # LightmapSettingsPrefab
 ## 概要
 Lightmap情報をプレハブに保存して、ランタイムで反映します。 
-![スクリーンショット](screenshot.png)
+![スクリーンショット](screenshot.jpg)
 
 ## 事前準備
 1. Lighting ウィンドウにある全タブのAuto GenerateをOFFにします。 
