@@ -3,7 +3,7 @@
 Lightmap情報をプレハブに保存して、ランタイムで反映します。
 
 ## 事前準備
-1. Lighting ウィンドウにあるAuto GenerateをOFFにします。
+1. Lighting ウィンドウにある全タブのAuto GenerateをOFFにします。
 
 ## アセット作成方法
 1. 任意のシーンを開きます。
