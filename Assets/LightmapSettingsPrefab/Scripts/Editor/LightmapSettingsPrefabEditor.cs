@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using System.Text.RegularExpressions;
@@ -19,7 +19,7 @@ public class LightmapSettingsPrefabEditor : Editor
     /// </summary>
     /// <param name="go"></param>
     public override void OnInspectorGUI()
-    { 
+    {
         var instance = (LightmapSettingsPrefab)target;
 
         EditorGUI.BeginDisabledGroup(true);
@@ -42,7 +42,7 @@ public class LightmapSettingsPrefabEditor : Editor
         {
             serializedObject.ApplyModifiedProperties();
         }
-	}
+    }
 
     /// <summary>
     /// ベイクボタン描画。
@@ -68,7 +68,7 @@ public class LightmapSettingsPrefabEditor : Editor
         var bakeBeginDisabledGroup = false;
 
         if (Lightmapping.isRunning)
-		{
+        {
             clearBeginDisabledGroup = true;
             bakeBeginDisabledGroup = true;
         }
@@ -78,22 +78,22 @@ public class LightmapSettingsPrefabEditor : Editor
         }
         if (!string.IsNullOrEmpty(path))
         {
-            bakeBeginDisabledGroup = true;           
+            bakeBeginDisabledGroup = true;
         }
-        
+
         GUILayout.BeginHorizontal();
         GUILayout.Space(EditorGUIUtility.labelWidth);
         EditorGUI.BeginDisabledGroup(clearBeginDisabledGroup);
         if (GUILayout.Button("Clear"))
-		{
+        {
             DoClear();
-		}
+        }
         EditorGUI.EndDisabledGroup();
         EditorGUI.BeginDisabledGroup(bakeBeginDisabledGroup);
         if (GUILayout.Button("Bake"))
-		{
+        {
             DoBake();
-		}
+        }
         EditorGUI.EndDisabledGroup();
 
         GUILayout.EndHorizontal();
@@ -165,7 +165,7 @@ public class LightmapSettingsPrefabEditor : Editor
         }
 
         instance.SetupLightmap();
-        
+
         DoApply(go);
     }
 

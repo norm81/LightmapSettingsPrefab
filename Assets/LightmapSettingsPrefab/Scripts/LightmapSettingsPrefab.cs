@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 #if UNITY_EDITOR
@@ -69,12 +69,12 @@ public class LightmapSettingsPrefab : MonoBehaviour
         LightmapSettings.lightmaps = lightmaps;
         LightmapSettings.lightmapsMode = lightmapsMode;
         LightmapSettings.lightProbes = lightProbes;
- 
+
         if (this.renderers != null)
         {
             if (materialPropertyBlock == null)
             {
-                materialPropertyBlock = new MaterialPropertyBlock(); 
+                materialPropertyBlock = new MaterialPropertyBlock();
             }
             for (var i = 0; i < this.renderers.Length; i++)
             {
